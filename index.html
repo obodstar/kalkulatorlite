@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR BARU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tampung">
+        <h1 align="center">Kalkulator Lite</h1>
+
+        <!-- list kalkulator -->
+
+        <input type="text" id="hasil" />
+        <input type="text" id="jawaban" placeholder="jawaban" />
+        <br />
+        <div class="tombol">
+            <div class="angka">
+                <button onclick="bersihkan()" id="bersih">C</button>
+                <br>
+                <button onclick="tambahinput('7')">7</button>
+                <button onclick="tambahinput('8')">8</button>
+                <button onclick="tambahinput('9')">9</button>
+                <br>
+                <button onclick="tambahinput('4')">4</button>
+                <button onclick="tambahinput('5')">5</button>
+                <button onclick="tambahinput('6')">6</button>
+                <br>
+                <button onclick="tambahinput('1')">1</button>
+                <button onclick="tambahinput('2')">2</button>
+                <button onclick="tambahinput('3')">3</button>
+                <br>
+                <button onclick="tambahinput('0')" class="kosong">0</button>
+            </div>
+            <br>
+            <div class="operator">
+                <button onclick="tambahinput('/')">:</button>
+                <button onclick="tambahinput('*')">*</button>
+                <button onclick="tambahinput('-')">-</button>
+                <button onclick="tambahinput('+')">+</button>
+                <button onclick="samadengan()">=</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
