@@ -1,15 +1,21 @@
-// dibuat oleh obod
-const kolomhasil = document.getElementById('hasil');
-let jawaban = document.getElementById('jawaban');
-console.log(jawaban);
-function tambahinput(value) {
-    kolomhasil.value += value;
+const resultField = document.getElementById('result');
+
+// Menambahkan nilai ke input
+function appendValue(value) {
+    resultField.value += value;
 }
 
-function bersihkan() {
-    kolomhasil.value = ''
+// Menghapus semua input
+function clearResult() {
+    resultField.value = '';
 }
 
-function samadengan(){
-    jawaban.value = eval(kolomhasil.value)
+// Menghitung hasil
+function calculateResult() {
+    try {
+        resultField.value = eval(resultField.value); // Gunakan eval dengan hati-hati
+    } catch (error) {
+        resultField.value = 'Error';
+    }
 }
+
